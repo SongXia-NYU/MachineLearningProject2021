@@ -45,3 +45,56 @@ use_cuda:                                         True
 2021-05-04 22:01:19,853 openchem INFO: Starting training from scratch
 2021-05-04 22:01:19,853 openchem INFO: Training is set up from epoch 0
 2021-05-04 22:01:21,909 openchem.fit INFO: TRAINING: [Time: 0m 2s, Epoch: 0, Progress: 0%, Loss: 11.7133]
+2021-05-04 22:12:17,078 openchem INFO: Running on 1 GPUs
+2021-05-04 22:12:17,079 openchem INFO: Logging directory is set to logs/logp_gcnn_logs
+2021-05-04 22:12:17,079 openchem INFO: Running with config:
+batch_size:                                       256
+encoder_params/encoder_dim:                       128
+encoder_params/input_size:                        33
+encoder_params/n_layers:                          5
+logdir:                                           logs/logp_gcnn_logs
+lr_scheduler_params/gamma:                        0.8
+lr_scheduler_params/step_size:                    15
+mlp_params/input_size:                            128
+mlp_params/n_layers:                              2
+num_epochs:                                       100
+optimizer_params/lr:                              0.0005
+print_every:                                      10
+random_seed:                                      42
+save_every:                                       5
+task:                                             regression
+use_clip_grad:                                    False
+use_cuda:                                         True
+
+2021-05-04 22:12:30,248 openchem INFO: Starting training from scratch
+2021-05-04 22:12:30,249 openchem INFO: Training is set up from epoch 0
+2021-05-04 22:12:31,543 openchem.fit INFO: TRAINING: [Time: 0m 1s, Epoch: 0, Progress: 0%, Loss: 11.1376]
+2021-05-04 22:12:31,714 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 11.4231, Metrics: -1.6777]
+2021-05-04 22:12:31,828 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:12:38,438 openchem.fit INFO: TRAINING: [Time: 0m 8s, Epoch: 10, Progress: 10%, Loss: 2.8132]
+2021-05-04 22:12:38,602 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 3.2550, Metrics: 0.2370]
+2021-05-04 22:12:39,226 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:12:45,849 openchem.fit INFO: TRAINING: [Time: 0m 15s, Epoch: 20, Progress: 20%, Loss: 0.8176]
+2021-05-04 22:12:46,012 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 0.9461, Metrics: 0.7782]
+2021-05-04 22:12:46,112 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:12:52,727 openchem.fit INFO: TRAINING: [Time: 0m 22s, Epoch: 30, Progress: 30%, Loss: 0.2455]
+2021-05-04 22:12:52,888 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 0.3922, Metrics: 0.9081]
+2021-05-04 22:12:52,991 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:12:59,587 openchem.fit INFO: TRAINING: [Time: 0m 29s, Epoch: 40, Progress: 40%, Loss: 0.2779]
+2021-05-04 22:12:59,748 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 0.3941, Metrics: 0.9076]
+2021-05-04 22:12:59,853 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:13:06,451 openchem.fit INFO: TRAINING: [Time: 0m 36s, Epoch: 50, Progress: 50%, Loss: 0.1279]
+2021-05-04 22:13:06,611 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 0.3409, Metrics: 0.9201]
+2021-05-04 22:13:06,716 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:13:13,317 openchem.fit INFO: TRAINING: [Time: 0m 43s, Epoch: 60, Progress: 60%, Loss: 0.1404]
+2021-05-04 22:13:13,478 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 0.3200, Metrics: 0.9250]
+2021-05-04 22:13:13,584 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:13:20,550 openchem.fit INFO: TRAINING: [Time: 0m 50s, Epoch: 70, Progress: 70%, Loss: 0.1532]
+2021-05-04 22:13:20,711 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 0.3194, Metrics: 0.9251]
+2021-05-04 22:13:20,809 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:13:27,418 openchem.fit INFO: TRAINING: [Time: 0m 57s, Epoch: 80, Progress: 80%, Loss: 0.1336]
+2021-05-04 22:13:27,595 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 0.3653, Metrics: 0.9144]
+2021-05-04 22:13:27,693 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
+2021-05-04 22:13:34,290 openchem.fit INFO: TRAINING: [Time: 1m 4s, Epoch: 90, Progress: 90%, Loss: 0.0954]
+2021-05-04 22:13:34,451 openchem.evaluate INFO: EVALUATION: [Time: 0m 0s, Loss: 0.3023, Metrics: 0.9291]
+2021-05-04 22:13:34,553 openchem.fit WARNING: Warning: module/MLP/layers/1/bias has zero variance (i.e. constant vector)
