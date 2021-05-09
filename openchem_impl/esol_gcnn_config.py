@@ -72,7 +72,7 @@ model_params = {
     'use_clip_grad': False,
     'batch_size': 256,
     'num_epochs': 101,
-    'logdir': 'logs/logp_gcnn_logs',
+    'logdir': 'logs/esol_gcnn_train',
     'print_every': 10,
     'save_every': 5,
     'train_data_layer': train_dataset,
