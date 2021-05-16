@@ -37,7 +37,7 @@ import pandas as pd
 data = pd.read_csv("../data/raw/esol.csv")
 data_train = data[data["group"] == "train"]
 # Here we use valid as test which is to fit openchem architecture
-data_test = data[data["group"] == "valid"]
+data_test = data[data["group"] == "test"]
 X_train, y_train = data_train["cano_smiles"].values, data_train["activity"].values.reshape(-1, 1)
 X_test, y_test = data_test["cano_smiles"].values, data_test["activity"].values.reshape(-1, 1)
 
@@ -72,7 +72,7 @@ model_params = {
     'use_clip_grad': False,
     'batch_size': 256,
     'num_epochs': 101,
-    'logdir': 'logs/esol_gcnn_train',
+    'logdir': 'logs/esol_gcnn_test',
     'print_every': 10,
     'save_every': 5,
     'train_data_layer': train_dataset,
@@ -92,8 +92,8 @@ model_params = {
     'encoder_params': {
         'input_size': train_dataset[0]["node_feature_matrix"].shape[1],
         'encoder_dim': 128,
-        'n_layers': 5,
-        'hidden_size': [128]*5,
+        'n_layers': 3,
+        'hidden_size': [128]*3,
     },
     'mlp': OpenChemMLP,
     'mlp_params': {
